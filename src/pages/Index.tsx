@@ -194,6 +194,16 @@ export default function Index() {
             </button>
           </div>
         </div>
+        {/* Author badge */}
+        <div
+          className="absolute bottom-8 right-6 animate-fade-in-up opacity-0 delay-500 rounded-xl px-5 py-3"
+          style={{ backgroundColor: "rgba(30,20,10,0.7)", border: "1px solid rgba(201,149,90,0.35)", backdropFilter: "blur(8px)" }}
+        >
+          <p className="font-body text-xs mb-0.5" style={{ color: "var(--earth-warm)" }}>Автор проекта</p>
+          <p className="font-display text-lg font-semibold leading-tight" style={{ color: "var(--cream)" }}>Даная Штейнбрехер</p>
+          <p className="font-body text-xs" style={{ color: "rgba(232,213,181,0.6)" }}>Группа ПО (ист и общ)</p>
+        </div>
+
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" style={{ color: "var(--earth-light)", opacity: 0.6 }}>
           <Icon name="ChevronDown" size={28} />
         </div>
@@ -529,11 +539,14 @@ export default function Index() {
             <p className="font-body text-xs tracking-[0.25em] uppercase mb-2" style={{ color: "var(--earth-light)", opacity: 0.7 }}>
               Об авторе
             </p>
-            <h3 className="font-display text-3xl font-light mb-3" style={{ color: "var(--cream)" }}>
-              Студент Адыгейского<br />государственного университета
+            <h3 className="font-display text-3xl font-semibold mb-1" style={{ color: "var(--cream)" }}>
+              Даная Штейнбрехер
             </h3>
+            <p className="font-body text-sm mb-4" style={{ color: "var(--ochre)" }}>
+              Группа ПО (ист и общ)
+            </p>
             <p className="font-body text-sm leading-relaxed mb-6" style={{ color: "rgba(232,213,181,0.75)" }}>
-              Этот путеводитель создан в рамках учебного проекта студентом АГУ.
+              Этот путеводитель создан в рамках учебного проекта.
               Цель — познакомить путешественников с уникальной природой и культурой Республики Адыгея.
             </p>
             <p className="font-body text-xs" style={{ color: "rgba(232,213,181,0.5)" }}>
